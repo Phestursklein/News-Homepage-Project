@@ -53,7 +53,7 @@ ul>li>a {
 
 }
 
-li>a:hover {
+li>a: hover {
     cursor: pointer;
     color: var(--Softorange);
 }
@@ -82,9 +82,11 @@ li>a:hover {
     padding: auto 2rem;
     border-radius: .5rem;
 }
-.mobile{
+
+.mobile {
     display: none;
 }
+
 .bright {
     display: flex;
     flex-direction: row;
@@ -136,7 +138,7 @@ li>a:hover {
 
 }
 
-.bright2>button:hover {
+.bright2>button: hover {
     cursor: pointer;
     background-color: var(--Verydarkblue);
 }
@@ -147,7 +149,7 @@ li>a:hover {
     flex-direction: column;
     justify-content: space-between;
     margin: 0 2rem;
-    height: 100vh;
+    height: 90vh;
     width: 40%;
     padding: .5rem 1rem 1rem;
     border-radius: .5rem;
@@ -262,17 +264,13 @@ li>a:hover {
     margin: 4rem auto;
 }
 
-@media (max-width:426px) {
+@media (max-width:480px) {
 
     body {
-        margin: 1rem;
+        margin: 0;
         padding: 0;
-        font-size: 16px;
+        width: fit-content;
     }
-    .wrapper {
-        margin: ;
-    }
-    
 
     ul>li>a {
         display: none;
@@ -280,18 +278,9 @@ li>a:hover {
     }
 
     .icon-menu {
-        display: flex;
+        display: block;
         float: right;
-        margin-left: 21rem;
-
-    }
-
-    .top {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-   
+        margin-right: -55rem;
     }
 
     .middle {
@@ -300,12 +289,17 @@ li>a:hover {
         /* justify-content: space-between; */
         width: 100%;
     }
-    .mobile{
-        width: 0%;
-        
+
+    .desktop {
+        display: none;
     }
 
-    .web{
+    .mobile {
+        display: flex;
+        width: 100%;
+    }
+
+    .web {
         width: 100%;
         font-size: 10px;
 
