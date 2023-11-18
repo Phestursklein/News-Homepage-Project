@@ -266,7 +266,6 @@ li>a:hover {
 @media (max-width:480px) {
 
     body {
-        position: relative;
     }
 
     ul>li>a {
@@ -277,17 +276,17 @@ li>a:hover {
     .icon-menu {
         display: block;
         float: right;
-        margin-right: -35rem;
+        margin-right: -30em;
         margin-top: 1rem;
         height: 17vh;
-        width: 30%;
+        width: 40%;
     }
 
     .middle {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        /* justify-content: space-between; */
+        justify-content: space-between;
         width: 100%;
     }
 
@@ -297,7 +296,8 @@ li>a:hover {
 
     .mobile {
         display: flex;
-        width: 100%;
+        justify-content: space-around;
+        width: 90%;
         border-radius: .7rem;
         margin-bottom: 1rem;
         height: 50vh;
@@ -329,9 +329,9 @@ li>a:hover {
 
     .bright2>p {
         color: var(--Darkgrayishblue);
-        font-size: 17px;
+        font-size: 20px;
         line-height: 2rem;
-        margin: 1rem 1rem 0 0;
+        margin: 1rem 0 .5rem 0;
         width: 100%;
 
     }
@@ -361,7 +361,7 @@ li>a:hover {
         flex-direction: column;
         margin: 3rem -1rem 1.5rem 2rem;
         height: 125vh;
-        width: 92%;
+        width: 95%;
         padding: .5rem 1rem 1rem;
         border-radius: .5rem;
 
@@ -411,12 +411,14 @@ li>a:hover {
     .end {
         flex-direction: column;
         justify-content: space-between;
+        width: 100%;
+        margin: 1rem;
 
 
     }
 
     .last>img {
-        width: 50%;
+        width: 70%;
         height: 40vh;
         border-radius: 1.5rem;
 
@@ -449,17 +451,16 @@ li>a:hover {
     }
 
     .laptops {
-        padding-right: 10rem;
-        width: 100%;
+        padding-right: 1rem;
+       /*width: 100%;*/
     }
-
     .gaming {
         margin-left: 0;
     }
 
     .attribution {
-        font-size: 50px;
-        margin: 4rem 2rem;
+        font-size: 30px;
+        margin: 4rem 1.5rem;
     }
 
 
