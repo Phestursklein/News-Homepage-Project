@@ -276,16 +276,15 @@ li>a:hover {
     .icon-menu {
         display: block;
         float: right;
-        margin-right: -30em;
+        margin-right: -30rem;
         margin-top: 1rem;
-        height: 17vh;
-        width: 40%;
+        height: 10vh;
+        width: 35%;
     }
 
     .middle {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
     }
@@ -296,11 +295,10 @@ li>a:hover {
 
     .mobile {
         display: flex;
-        justify-content: space-around;
-        width: 90%;
+        width: 80%;
         border-radius: .7rem;
-        margin-bottom: 1rem;
-        height: 50vh;
+        margin: 1rem;
+        height: 40vh;
     }
 
     .web {
@@ -314,7 +312,7 @@ li>a:hover {
 
     .bright {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
     }
 
@@ -359,10 +357,10 @@ li>a:hover {
         background: var(--Verydarkblue);
         display: flex;
         flex-direction: column;
-        margin: 3rem -1rem 1.5rem 2rem;
+        margin: 2rem .2rem;
         height: 125vh;
-        width: 95%;
-        padding: .5rem 1rem 1rem;
+        width: 100%;
+        padding: .5rem 0;
         border-radius: .5rem;
 
     }
@@ -412,7 +410,7 @@ li>a:hover {
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
-        margin: 1rem;
+        margin: 0;
 
 
     }
@@ -451,7 +449,7 @@ li>a:hover {
     }
 
     .laptops {
-        padding-right: 1rem;
+        padding-right: 0;
        /*width: 100%;*/
     }
     .gaming {
