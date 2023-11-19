@@ -259,7 +259,7 @@ li>a:hover {
     margin: 4rem auto;
 }
 
-@media (max-width:470px) {
+@media (max-width:480px) {
 
     body {
 
@@ -304,7 +304,7 @@ li>a:hover {
 
     .mobile {
         display: flex;
-        width: 103%;
+        width: 100%;
         border-radius: .7rem;
         margin-bottom: .5rem;
         height: 50vh;
