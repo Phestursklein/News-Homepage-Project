@@ -259,7 +259,7 @@ li>a:hover {
     margin: 4rem auto;
 }
 
-@media (max-width:1000px) {
+@media (max-width:480px) {
 
     body {
 
@@ -276,7 +276,7 @@ li>a:hover {
     .icon-menu {
         display: block;
         float: right;
-        margin-right: -39rem;
+        margin-right: -50rem;
         margin-top: 1rem;
         height: 12vh;
         width: 20%;
