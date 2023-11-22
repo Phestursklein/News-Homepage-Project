@@ -302,7 +302,7 @@ li>a:hover {
     }
 
     .mobile {
-        display: flex;
+        display: block;
         width: 100%;
         border-radius: .7rem;
         margin-bottom: .5rem;
