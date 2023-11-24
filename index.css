@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 
@@ -31,7 +32,7 @@ body {
     display: none;
 }
 
-.top>img {
+.top>h1 {
     padding: 2rem;
 }
 
@@ -253,16 +254,37 @@ li>a:hover {
     margin-left: 1.6rem;
 }
 
+.youtube {
+    text-align: center;
+}
+
+.youtube>p {
+
+    font-size: 20px;
+    font-weight: 900;
+    color: crimson;
+    margin: 2rem;
+}
+
 .attribution {
     font-size: 50px;
     margin: 4rem auto;
 }
 
-@media (max-width:480px) {
+/* styled in css @media screen and (max-width:768px )
+
+ styled internally in html @media screen (max-width:858px )
+@media screen (max-width:952px ) */
+
+
+@media screen and (max-width:768px){
 
     body {
-
+        position: relative;
+        width: fit-content;
+        margin: .3rem;
     }
+
     .top>img {
         padding: 1rem;
     }
@@ -273,12 +295,12 @@ li>a:hover {
     }
 
     .icon-menu {
-        display: block;
-        float: right;
-        margin-right: -50rem;
+        display: inline-block;
+        /* float: right; */
+        margin-right: -25rem;
         margin-top: 1rem;
-        height: 12vh;
-        width: 20%;
+        height: 10vh;
+        width: 27%;
     }
 
     .middle {
@@ -289,20 +311,21 @@ li>a:hover {
         padding: 0.5rem;
 
     }
+
     .logo {
         width: 100%;
         padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        
+        padding-right: -0.5rem;
+
     }
-    
+
 
     .desktop {
         display: none;
     }
 
     .mobile {
-        display: block;
+        display: flex;
         width: 100%;
         border-radius: .7rem;
         margin-bottom: .5rem;
@@ -369,9 +392,9 @@ li>a:hover {
         margin: 2rem .2rem 1rem .5rem;
         height: 100vh;
         width: 100%;
-        padding: .5rem .5rem ;
+        padding: .5rem .5rem;
         border-radius: .5rem;
-        
+
     }
 
     .right {
@@ -464,6 +487,29 @@ li>a:hover {
 
     .gaming {
         margin-left: 0;
+
+    }
+
+    .youtube {
+        text-align: center;
+    }
+
+    .youtube > video {
+        width: 70%;
+        height: 30vh;
+
+    }
+
+    .youtube > p {
+        font-style: italic;
+        font-size: 15px;
+        font-weight: 900;
+        color: crimson;
+        margin: 2rem;
+    }
+
+    .more {
+        display: block;
     }
 
     .attribution {
@@ -473,4 +519,3 @@ li>a:hover {
 
 
 }
-
