@@ -279,12 +279,11 @@ li>a:hover {
 
     font-size: 20px;
     font-weight: 200;
-    color: black;
+    color: var(--Darkgrayishblue;
     padding-bottom: 0.5rem;
     text-decoration: none;
 }
 .youtube>a:hover {
-
     font-size: 20px;
     color: blue;
    
@@ -552,6 +551,9 @@ li>a:hover {
     }
     .youtube>a {
         text-decoration: none;
+        font-style: italic;
+    color: blue;
+    font-size: 14px;
     }
 
     .youtube>p {
