@@ -272,18 +272,20 @@ li>a:hover {
 
     font-size: 20px;
     font-weight: 500;
-    color: black;
+    color: var(--Darkgrayishblue);
     padding: 0.5rem;
 }
 .youtube>a {
 
     font-size: 20px;
-    font-weight: 200;
-    color: var(--Darkgrayishblue;
+    font-weight: 400;
+    font-style: italic;
+    color: blue;
     padding-bottom: 0.5rem;
     text-decoration: none;
 }
 .youtube>a:hover {
+
     font-size: 20px;
     color: blue;
    
@@ -297,7 +299,7 @@ li>a:hover {
 }
 .attribution>p {
     font-size: 15px;
-    color: var(--Darkgrayishblue);
+    color: black;
     padding:0.5rem;
 }
 
