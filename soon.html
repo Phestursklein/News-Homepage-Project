@@ -5,38 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 20px;
-            text-decoration: none;
-            background-color: #4285f4;
-            color: #fff;
-            border-radius: 5px;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <h1>Coming Soon!</h1>
-    <p>We're working on something awesome. Stay tuned for updates.</p>
+<body class="bg-cover bg-center h-screen flex justify-center items-center text-center" style="background-image: url('https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+    <div class="bg-white bg-opacity-75 p-8 md:p-12 rounded-lg shadow-xl w-full max-w-lg">
+        <h1 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Coming Soon!</h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-6">We're working on something exciting. Stay tuned for updates and be the first to know!</p>
 
-    <a href="index.html" class="button">Home</a>
+        <div class="text-xl md:text-2xl text-gray-800 font-semibold mb-8">
+            <p>Launches in:</p>
+            <div id="countdown-timer"></div>
+        </div>
+
+        <a href="index.html" class="inline-block bg-blue-500 text-white py-3 px-6 md:py-3 md:px-8 rounded-full text-lg font-bold hover:bg-blue-600 transition-colors mb-6">Home</a>
+
+        <div class="flex justify-center space-x-4 md:space-x-6 mb-6">
+            <a href="#" target="_blank" class="text-2xl md:text-3xl text-blue-500 hover:text-blue-600 transition-colors">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" target="_blank" class="text-2xl md:text-3xl text-blue-400 hover:text-blue-500 transition-colors">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" target="_blank" class="text-2xl md:text-3xl text-pink-500 hover:text-pink-600 transition-colors">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <div class="mb-6">
+            <p class="text-lg md:text-xl text-gray-700 mb-4">Enter your email to get notified:</p>
+            <form action="#" method="POST" class="flex items-center justify-center">
+                <input type="email" placeholder="Your email" required class="py-2 px-4 rounded-full border-2 border-gray-300 w-3/4 md:w-2/3 mr-4 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                <button type="submit" class="bg-blue-500 text-white py-2 px-6 rounded-full text-lg font-semibold hover:bg-blue-600 transition-colors">Notify Me</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function updateCountdown() {
+            const targetDate = new Date("December 31, 2024 00:00:00").getTime();
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown-timer").innerHTML =
+                days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("countdown-timer").innerHTML = "We're Live!";
+            }
+        }
+
+        const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
 </body>
 
 </html>
