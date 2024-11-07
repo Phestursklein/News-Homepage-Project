@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bright Future of Web 3.0? | PHKNEWS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold">PHKNEWS</a>
+            <div class="space-x-4">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Categories</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Content -->
+    <article class="container mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
+        <h1 class="text-3xl font-semibold mb-4">The Bright Future of Web 3.0?</h1>
+        <p class="text-gray-600 mb-6">Posted on <time datetime="2024-11-07">November 7, 2024</time> by PHKNEWS Staff</p>
+        
+        <p class="text-gray-700 mb-4">Web 3.0, the next evolution of the internet, aims to return the power of the web to its users, promoting decentralized platforms and open-source innovations. But the reality of its promise remains to be fully realized.</p>
+        
+        <p class="text-gray-700 mb-4">The fundamental idea behind Web 3.0 is decentralization, giving individuals greater control over their data and online identities through technologies like blockchain. However, with rising debates around regulations and scalability, the question is: can Web 3.0 live up to its expectations?</p>
+        
+        <!-- Additional content goes here -->
+        
+        <a href="index.html" class="mt-6 inline-block text-blue-600 hover:underline">← Back to Home</a>
+    </article>
+
+    <footer class="bg-gray-800 text-white text-center py-4 mt-10">
+        <p>© 2024 PHKNEWS. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+        
+        smoothScrollLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+    </script>
+
+</body>
+</html>
